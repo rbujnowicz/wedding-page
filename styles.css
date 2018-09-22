@@ -1,0 +1,425 @@
+*{
+  display:border-box;
+}
+
+body{
+  background:url(https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png)no-repeat center center fixed;
+  background-size:cover;
+}
+
+/*===HEADER STYLES===*/
+
+.cover{
+  background:url(https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg)no-repeat 70% center;
+  background-size:cover;
+  height:100vh;
+  width:100%;
+  text-align:center;
+  display:table;
+}
+
+.wrapper{
+  margin-top:1.5rem;
+  display:table-cell;
+  vertical-align:middle;
+}
+
+.info{
+  background-color:hsla(100,0%,0%,.45);
+}
+.info h2{
+  font-family:'Lora', serif; /*Libre Baskerville, serif;*/
+  font-size:1.3rem;
+  color:#fff;
+  font-weight:600;
+  padding:.9rem;
+}
+
+.info h2::after{
+  content: "";
+    display: block;
+    height: .1rem;
+    width: 43.5vw;
+    margin: 1rem auto;
+    background-color: #FFF;
+}
+
+.info p{
+  font-family:'Lora', serif;/*Libre Baskerville, serif;*/
+  color:#fff;
+  font-size:1.3rem;
+  text-align:center;
+  padding:.9rem 0;
+}
+
+.info p::before,
+.info p::after{
+   display:inline-block;
+   content: "";
+   background-color: #fff;
+   height: 1px;
+   width: 1.5rem;
+   vertical-align: middle;
+   margin: 0 .5rem;
+}
+
+.info h1{
+  font-family:'Parisienne', cursive;/*Great Vibes;*/
+  font-size:2.6rem;
+  font-weight:700;
+  color:#d2ba87;
+  padding:.5rem 0;
+}
+
+@media(min-width:768px){
+
+  .cover{
+    background:url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat center/cover;
+  }
+  .info{
+    width:60%;
+    margin:1.5rem auto;
+    border-radius:6px;
+  }
+
+  .info h2::after{
+  content: "";
+    display: block;
+    height: .1rem;
+    width: 25vw;
+    margin: 1rem auto;
+    background-color: #FFF;
+ }
+  .info h2{
+    text-transform: uppercase;
+  }
+}
+/*===CONTENT STYLES===*/
+
+a{
+  text-decoration:none;
+  color:#bd806e;
+}
+
+a:hover{
+  color:#eda087;
+}
+
+.content{
+  position:relative;
+  display:block;
+  color:#444349;
+}
+
+.locations, .program, .gifts, .quest-ans, .contact{
+  display:block;
+  text-align:center;
+  width:100vw;
+  font-family:'Parisienne', cursive;/*Great Vibes;*/
+  font-size:3rem;
+  padding:1.2rem;
+  margin:.7rem 0;
+}
+
+.program, .quest-ans{
+  background-color:hsla(100,0%,0%,.6);
+  color:#d2ba87;
+}
+/*===LOCATIONS STYLES===*/
+.ceremony, .photos, .party{
+  width:100%;
+}
+
+.locations h1{
+  /*font-family:Great Vibes;*/
+  font-size:3rem;
+  padding:.2rem;
+  padding-bottom:1rem;
+  margin:.2rem 0;
+}
+
+.locations h2{
+  /*font-family:Libre Baskerville, serif;*/
+  font-size:1.5rem;
+  font-weight:600;
+}
+
+.ceremony img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:7.5rem;
+    padding:1.5rem 0;
+}
+
+.party img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height:7.5rem;
+  padding:1.5rem 0;
+}
+.ceremony, .photos, .party, .gifts p{
+  font-family:'PT Sans Narrow', sans-serif;/*Muli, san-serif;*/
+  font-size:1.1rem;
+  padding:.2rem;
+}
+
+.ceremony::after, .photos::after, .party::after{
+  content: "";
+    display: block;
+    height: .1875rem;
+    width: 25vw;
+    margin: 1.5rem auto;
+    background-color: #444349;
+}
+
+.photos img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:7.5rem;
+    padding:1.5rem 0;
+}
+
+.party img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height:7.5rem;
+  padding:1.5rem 0;
+}
+
+@media(min-width:768px){
+  .ceremony, .photos, .party{
+    width:30%;
+    display:inline-block;
+  }
+
+  .ceremony::after, .photos::after, .party::after{
+  content: "";
+    display: block;
+    height: 0;
+    width: 0;
+}
+}
+/*===PROGRAM STYLES===*/
+
+.program{
+  width:100%;
+}
+
+.program ul{
+  list-style-type:none;
+  margin:0;
+}
+.program li{
+  text-align:left;
+  display:block;
+  font-family:'PT Sans Narrow', sans-serif;/*Muli, san-serif;*/
+  font-size:1.1rem;
+  padding:.2rem;
+  margin:0;
+}
+
+.program h3{
+  font-family:'Lora', serif;/*Muli, san-serif;*/
+  font-size:1rem;
+  font-style:italic;
+  font-weight:700;
+  padding:.2rem;
+  margin: 1rem auto;
+  margin-bottom:1.5rem;
+  text-align:center;
+  width:90%;
+}
+
+@media(min-width:768px){
+  .program ul{
+    width:33%;
+    margin:0 auto;
+    padding-bottom:.7rem;
+  }
+
+  .program h1{
+    padding-top:.7rem;
+  }
+}
+
+/*===GIFT STYLES===*/
+
+.gifts{
+  width:100%;
+}
+
+.gifts h3{
+  font-family:'Lora', serif;/*Libre Baskerville,serif;*/
+  font-size:1rem;
+  font-weight:600;
+  padding:.2rem;
+  width:90%;
+  margin:1.5rem auto;
+  margin-bottom:1.5rem;
+  text-align:center;
+}
+
+
+.gifts img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:7.5rem;
+    padding:1.5rem 0;
+}
+
+.gifts p{
+  font-family:'Lora', serif;/*Libre Baskerville, serif;*/
+  font-size:1rem;
+  font-weight:600;
+  width:90%;
+  margin:0 auto;
+  line-height:1.1rem;
+}
+/*===Question & ANSWERS STYLES===*/
+
+.quest-ans{
+  width:100%;
+}
+
+.quest-ans h1{
+  width:90%;
+  margin:.5rem auto;
+}
+
+.t-and-a, .f-and-f, .other{
+  width:100%;
+}
+
+.t-and-a h2{
+  font-family:'Lora', serif;/*Libre Baskerville, serif;*/
+  font-size:1.4rem;
+  padding:.5rem;
+  margin:1rem 0;
+  margin-bottom:1.5rem;
+  text-align:center;
+  font-weight:700;
+}
+
+.f-and-f h2{
+  font-family:'Lora', serif;/*Libre Baskerville, serif;*/
+  font-size:1.4rem;
+  padding:.5rem;
+  margin:1rem 0;
+  margin-bottom:1.5rem;
+  text-align:center;
+  font-weight:700;
+}
+
+.other h2{
+  font-family:'Lora', serif;/*Libre Baskerville, serif;*/
+  font-size:1.4rem;
+  padding:.5rem;
+  margin:1rem 0;
+  margin-bottom:1.5rem;
+  text-align:center;
+  font-weight:700;
+}
+.question, .answer{
+  font-family:'PT Sans Narrow', sans-serif; /*Muli, san-serif;*/
+  text-align:left;
+}
+.question{
+  font-size:1.2rem;
+  font-weight:600;
+  width:90%;
+  padding: .5rem 0;
+  margin:0 auto;
+}
+
+.answer{
+  font-size: 1.2rem;
+  width:90%;
+  padding:.5rem 0;
+  line-height:1.4rem;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+
+.t-and-a::after, .f-and-f::after, .other::after{
+  content: "";
+    display: block;
+    height: .1875rem;
+    width: 50vw;
+    margin: 1.5rem auto;
+    background-color: #d2ba87;
+}
+
+@media(min-width:768px){
+
+  /*.qa-wrapper{
+    display:table;
+  }*/
+
+  .quest-ans{
+    width:100%;
+  }
+  .quest-ans h1{
+    text-align:center;
+  }
+
+  .t-and-a, .f-and-f, .other{
+   width:30%;
+   vertical-align:top;
+   padding:.2rem;
+   margin: 0rem;
+   display:inline-block;
+   text-align:left;
+  }
+
+  .t-and-a, .f-and-f, .other h2{
+    text-align:left;
+  }
+
+.t-and-a::after, .f-and-f::after, .other::after{
+  display:none;
+ }
+
+  .question, .answer{
+    font-size:1.1rem;
+  }
+
+}
+/*===CONTACT STYLES===*/
+
+.contact p{
+  font-family:'Lora', serif;/*Libre Baskerville, serif;*/
+  font-size:1.1rem;
+  line-height:1.3rem;
+  margin:1rem auto;
+  margin-bottom:1.5rem;
+  padding:.5rem;
+  width:90%;
+}
+
+.mail{
+  font-size:1.1rem;
+  font-weight:600;
+}
+
+/*===FOOTER STYLES===*/
+
+footer{
+ background-color:#606060;
+ height:70px;
+}
+
+
+footer p{
+  font-family:'PT Sans Narrow', sans-serif; /*Muli, san-serif;*/
+  font-size:.95rem;
+  color:#fff;
+  margin:1rem auto;
+  padding:1.3rem;
+  width:90%;
+  text-align:center;
+}
